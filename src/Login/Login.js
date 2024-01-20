@@ -12,6 +12,9 @@
   }
   ```
 */
+import img from '../images/pro.png'
+
+
 export default function Login() {
     return (
       <>
@@ -27,7 +30,7 @@ export default function Login() {
           <div className="sm:mx-auto sm:w-full sm:max-w-sm">
             <img
               className="mx-auto h-10 w-auto"
-              src="http://www.hindigraphics.in/wp-content/uploads/2019/01/pro.png"
+              src={img}
               alt="Your Company"
             />
             <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">

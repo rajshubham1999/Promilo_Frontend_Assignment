@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom';
+import img from "../images/pro.png";
 
 function Productlist() {
     let api = `https://api.kalpav.com/api/v1/product/category/retail`;
@@ -22,7 +23,7 @@ function Productlist() {
             <div className='flex space-x-8 justify-between items-center py-2 px-2 '>
                 <div className='flex space-x-4'>
                     <div className='h-[1px] w-[100px] py-1px'>
-                        <img src="http://www.hindigraphics.in/wp-content/uploads/2019/01/pro.png" />
+                        <img src={img} />
                     </div>
                     <NavLink to="/Home">Home</NavLink>
                     <NavLink to="/About">About</NavLink>
